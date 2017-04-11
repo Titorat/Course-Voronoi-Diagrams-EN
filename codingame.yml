@@ -1,6 +1,8 @@
-title : Content name
+title : Voronoi Diagrams
 plan:
-  - title: Part 1
+  - title: "Voronoi Diagrams"
     statement: markdowns/part1.md
-  - title: Part 2
+  - title: "Voronoi Diagrams II"
     statement: markdowns/part2.md
+  - title: Final Words
+    statement: markdowns/final.md
