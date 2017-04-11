@@ -1,6 +1,6 @@
 title : Voronoi Diagrams
 plan:
-  - title: "Voronoi Diagrams"
+  - title: "What are Voronoi Diagrams?"
     statement: markdowns/part1.md
   - title: "Voronoi Diagrams: Manhattan Distance"
     statement: markdowns/part2.md
