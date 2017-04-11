@@ -2,7 +2,7 @@ title : Voronoi Diagrams
 plan:
   - title: "Voronoi Diagrams"
     statement: markdowns/part1.md
-  - title: "Voronoi Diagrams II"
+  - title: "Voronoi Diagrams: Manhattan Distance"
     statement: markdowns/part2.md
-  - title: Final Words
+  - title: "Final Words"
     statement: markdowns/final.md
