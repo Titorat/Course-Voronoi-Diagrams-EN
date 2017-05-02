@@ -9,7 +9,7 @@ In this Course we learned the basics of Voronoi Diagrams. The concept is simple 
 **Cons**
 
 - Voronoi Diagrams can't deal with real-time distances. A planned emergency response diagram renders useless if traffic jams affect ambulances travel time.
-- Resource intensive. Naive implementation is O(n^2) complex. Fortune's algorithm is O(n log(n)) complex.
+- Resource intensive. Naive implementation is `O(n^2)` complex. Fortune's algorithm is `O(n log(n))` complex.
 
 ## Codingame Puzzles 
 There are many Codingame puzzles where you can use Voronoi Diagrams:

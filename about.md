@@ -22,6 +22,8 @@ This course will make use of external resources:
 -  Raymond Hill https://github.com/gorhill/Javascript-Voronoi 
 
 (BSD License Copyright (c) 2015 Mike Bostock)
+
 (MIT License Copyright (c) Philippe Rivière)
+
 (MIT License Copyright (c) 2010-2013 Raymond Hill)
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Based on https://bl.ocks.org/Fil/a7495ca3d5b322a6697530feb62fceef MIT License Copyright (c) Philippe Rivière -->
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+    canvas { margin: 20px; border: solid black 2px; }
+  </style>
+</head>
+
+<body>
+  <canvas width=540 height=300>
+  <script src="distance.js"></script>
+  <script>
+        var distance = distancefunction;
+
+        var canvas = d3.select('canvas').node(),
+            context = canvas.getContext("2d"),
+            width = canvas.width,
+            height = canvas.height;
+
+        var sites = d3.range(40).map(function (d) {
+            return [width * Math.random(), height * Math.random()];
+        });
+
+        var color = d3.scaleOrdinal(d3.schemeCategory20b);
+
+
+        function drawsites() {
+            sites.forEach(function (d, i) {
+                context.lineWidth = 10;
+                context.beginPath();
+                context.strokeStyle = color(i);
+                var x = d[0],
+                    y = d[1];
+                context.moveTo(x - 5, y);
+                context.lineTo(x + 5, y);
+                context.stroke();
+                context.lineWidth = 4;
+                context.beginPath();
+                context.strokeStyle = '#fff';
+                var x = d[0],
+                    y = d[1];
+                context.moveTo(x - 2, y);
+                context.lineTo(x + 2, y);
+                context.stroke();
+            });
+        }
+
+        var p = 0;
+        var interval = d3.interval(function (elapsed) {
+            var n = 1000;
+            while (n-- > 0) {
+
+                var x = p % width,
+                    y = ((p - x) / width) % height;
+                p++;
+                if (p > width * height) {
+                    interval.stop();
+                    console.log('finished!');
+                    break;
+                } else {
+                    var i = d3.scan(sites.map(function (d) {
+                        return distance(d, [x, y]);
+                    }));
+                    context.beginPath();
+                    context.fillStyle = color(i);
+                    context.rect(x, y, 1, height);
+                    context.fill();
+                }
+            }
+            drawsites();
+            if (elapsed > 30000) interval.stop();
+        });
+
+    </script>
+</body>
