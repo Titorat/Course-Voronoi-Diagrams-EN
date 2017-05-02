@@ -4,6 +4,8 @@
    a: With two components: a[0] and a[1], 'x' and 'y' coordinates
    b: With two components: a[0] and a[1], 'x' and 'y' coordinates
  Returns: Distance value.
+ 
+  You may need either  Math.abs() or Math.sqrt() functions on your calculations
 */
 function distancefunction(a, b) {
             var dx = b[0] - a[0];
