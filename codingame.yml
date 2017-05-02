@@ -4,8 +4,6 @@ plan:
     statement: markdowns/intro.md
   - title: "Voronoi Diagrams: Distance Functions"
     statement: markdowns/distances.md
-  - title: "Delaunay Triangulation"
-    statement: markdowns/triangulation.md	
   - title: "Game AI's"
     statement: markdowns/game.md
   - title: "Fortune's Algorithm"

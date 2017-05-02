@@ -32,3 +32,9 @@ https://github.com/d3/d3-voronoi
 
 https://en.wikipedia.org/wiki/Voronoi_diagram
 
+https://en.wikipedia.org/wiki/Fortune%27s_algorithm
+
+https://en.wikipedia.org/wiki/Delaunay_triangulation With a hard relationship with Voronoi Diagrams.
+
+
+
