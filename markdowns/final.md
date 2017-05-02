@@ -25,6 +25,10 @@ As you see, a lot of game AI's make use of Voronoi diagrams. Maximizing controll
 ## Other interesting links
 
 http://www.raymondhill.net/voronoi/rhill-voronoi.html
+
 https://visionscarto.net/the-state-of-d3-voronoi
+
 https://github.com/d3/d3-voronoi
+
 https://en.wikipedia.org/wiki/Voronoi_diagram
+
