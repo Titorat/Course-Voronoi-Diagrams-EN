@@ -4,9 +4,8 @@ In game theory Voronoi Diagrams are widely used. When N players compete for the 
 
 On this image:
 
-![alt text](voronoi.jpg "Voronoi Game")
+![Voronoi Game](voronoi.jpg "Voronoi Game")
 
-Alternate 
 _Some sprites from https://cdn-games.codingame.com/hypersonic/players.png_
 
 Players `B` and `C` can be tempted to capture the health pack `4`, but according to the Voronoi Diagram Player `D` will reach it faster. If these three players target the same health pack `4`, it's 100% sure that player `D` will take it.
@@ -16,4 +15,5 @@ Voronoi Diagrams are also used to maximize control areas. If the meta game is ab
  Learn more about that heuristic in [Tron Google AI Challenge post-mortem](https://www.a1k0n.net/2010/03/04/google-ai-postmortem.html)
  
  ![Voronoi Control](https://www.a1k0n.net/img/voronoi.gif "Voronoi Control")
+ *Image from https://www.a1k0n.net/img/voronoi.gif*
  
