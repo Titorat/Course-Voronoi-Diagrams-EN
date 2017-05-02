@@ -1,9 +1,15 @@
 title : Voronoi Diagrams
 plan:
   - title: "What are Voronoi Diagrams?"
-    statement: markdowns/part1.md
-  - title: "Voronoi Diagrams: Manhattan Distance"
-    statement: markdowns/part2.md
+    statement: markdowns/intro.md
+  - title: "Voronoi Diagrams: Distance Functions"
+    statement: markdowns/distances.md
+  - title: "Delaunay Triangulation"
+    statement: markdowns/triangulation.md	
+  - title: "Game AI's"
+    statement: markdowns/game.md
+  - title: "Fortune's Algorithm"
+    statement: markdowns/fortune.md
   - title: "Final Words"
     statement: markdowns/final.md
 projects:
