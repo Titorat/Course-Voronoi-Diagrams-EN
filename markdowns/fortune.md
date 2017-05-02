@@ -2,4 +2,4 @@
 
 
 
-@[Voronoi Diagrams]({"stubs": ["demo1.html","rhill-voronoi-core.js"],"layout": "aside", "command": "echo 'CG> open --static-dir /project/target /demo1.html'"})
+@[Fortune's Algorithm]({"stubs": ["fortune.html","rhill-voronoi.js"],"layout": "aside", "command": "echo 'CG> open --static-dir /project/target /fortune.html'"})
