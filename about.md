@@ -13,11 +13,15 @@ Students will learn what a Voronoi Diagram is, and some use cases.
 Voronoi Diagrams can be used on:
 -  Spatial analysis & Resource organization: Mobile phone base stations, emergency modeling, geomarketing, etc.
 -  Game AI: Maximize controlled area, find items where you always reach faster than the enemy, safest route,etc.
--  Many other applications: https://www.ics.uci.edu/~eppstein/gina/scot.drysdale.html & https://en.wikipedia.org/wiki/Voronoi_diagram#Applications
+-  Many other applications: https://en.wikipedia.org/wiki/Voronoi_diagram#Applications
 
 ## References and Credits
 This course will make use of external resources:
--  Data-Driven Document Library, D3js: https://d3js.org/  (BSD License Copyright (c) 2015 Mike Bostock)
--  Philippe Rivière https://visionscarto.net/the-state-of-d3-voronoi (MIT License Copyright (c) Philippe Rivière)
--  Raymond Hill https://github.com/gorhill/Javascript-Voronoi (MIT License Copyright (c) 2010-2013 Raymond Hill)
+-  Data-Driven Document Library, D3js: https://d3js.org/  
+-  Philippe Rivière https://visionscarto.net/the-state-of-d3-voronoi 
+-  Raymond Hill https://github.com/gorhill/Javascript-Voronoi 
+
+(BSD License Copyright (c) 2015 Mike Bostock)
+(MIT License Copyright (c) Philippe Rivière)
+(MIT License Copyright (c) 2010-2013 Raymond Hill)
 
