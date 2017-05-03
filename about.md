@@ -4,7 +4,7 @@ This course is a simple approach to Voronoi Diagrams theory.
 Basic programming knowledge: Variables, Arrays, Loops, Functions and Geometry.
 
 Javascript is used on the Course due to the visual nature of the examples, but it's not a requeriment.
-The Course has simple programming exercises that can be solved with a minimal programming knowledge.
+The Course has simple programming exercises that can be solved with some minimal programming knowledge.
 
 ## Difficulty Level: 
 Intermediate.
