@@ -16,83 +16,102 @@
   <canvas id="canvas" width="865" height="671">
   <script src="distance.js"></script>
   <script>
-        var distance = distancefunction;
-
-        var canvas = d3.select('canvas').node(),
-            context = canvas.getContext("2d"),
-            width = canvas.width,
-            height = canvas.height;
-
-        var sites = d3.range(40).map(function (d) {
-            return [width * Math.random(), height * Math.random()];
-        });
-
-        var color = d3.scaleOrdinal(d3.schemeCategory20b);
-
-
-        function drawsites() {
-            sites.forEach(function (d, i) {
-                context.lineWidth = 10;
-                context.beginPath();
-                context.strokeStyle = color(i);
-                var x = d[0],
-                    y = d[1];
-                context.moveTo(x - 5, y);
-                context.lineTo(x + 5, y);
-                context.stroke();
-                context.lineWidth = 4;
-                context.beginPath();
-                context.strokeStyle = '#fff';
-                var x = d[0],
-                    y = d[1];
-                context.moveTo(x - 2, y);
-                context.lineTo(x + 2, y);
-                context.stroke();
-            });
-        }
-
-        var p = 0;
-        var interval;
-        function redraw(){
-		interval = d3.interval(function (elapsed) {
-            var n = 1000;
-            while (n-- > 0) {
-
-                var x = p % width,
-                    y = ((p - x) / width) % height;
-                p++;
-                if (p > width * height) {
-                    interval.stop();
-                    console.log('finished!');
-                    break;
-                } else {
-                    var i = d3.scan(sites.map(function (d) {
-                        return distance(d, [x, y]);
-                    }));
-                    context.beginPath();
-                    context.fillStyle = color(i);
-                    context.rect(x, y, 1, height);
-                    context.fill();
-                }
-            }
-            drawsites();
-            if (elapsed > 30000) interval.stop();
-        });
-		}
-		redraw();
-
- var canvas = document.getElementById('canvas'); //Canvas to draw
- window.addEventListener('resize', resizeCanvas, false);
-  function resizeCanvas() {
-	interval.stop();
-	p=0;
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-	width = canvas.width,
-    height = canvas.height;
-	canvas = d3.select('canvas').node();
-    context = canvas.getContext("2d");
+	var distance = distancefunction;
+	var canvas,context,width,height,sites,polygons ;
+	var color = d3.scaleOrdinal(d3.schemeCategory20b);
+	var p = 0;
+	var interval = null;
 	
+	function drawsites() {
+		sites.forEach(function (d, i) {
+			context.lineWidth = 10;
+			context.beginPath();
+			context.strokeStyle = color(i);
+			var x = d[0],
+				y = d[1];
+			context.moveTo(x - 5, y);
+			context.lineTo(x + 5, y);
+			context.stroke();
+			context.lineWidth = 4;
+			context.beginPath();
+			context.strokeStyle = '#fff';
+			var x = d[0],
+				y = d[1];
+			context.moveTo(x - 2, y);
+			context.lineTo(x + 2, y);
+			context.stroke();
+		});
+	}
+
+
+	function redraw(){
+	interval = d3.interval(function (elapsed) {
+		var n = width;
+		while (n-- > 0) {
+
+			var x = p % width,
+				y = ((p - x) / width) % height;
+			p++;
+			if (p > width * height) {
+				interval.stop();
+				console.log('finished!');
+				var testdir = distance([0,0], [1000, 1500]);
+				var euclidean = 1000*1000+1500*1500;
+				if (testdir == euclidean || testdir == Math.sqrt(euclidean))
+				   drawvoronoi();
+				break;
+			} else {
+				var i = d3.scan(sites.map(function (d) {
+					return distance(d, [x, y]);
+				}));
+				context.beginPath();
+				context.fillStyle = color(i);
+				context.rect(x, y, 1, 2);//height);
+				context.fill();
+			}
+		}
+		drawsites();
+		if (elapsed > 60000) {
+		   console.log('Timeout, stopping');
+		  interval.stop();
+		  }
+	});
+	}
+
+	function drawvoronoi(){
+		context.lineWidth = 1;
+		context.beginPath();
+		for (var i = 0, n = polygons.length; i < n; ++i) drawCell(polygons[i]);
+		context.strokeStyle = "#000";
+		context.stroke();
+	}
+
+	function drawCell(cell) {
+		if (!cell) return false;
+		context.moveTo(cell[0][0], cell[0][1]);
+		for (var j = 1, m = cell.length; j < m; ++j) {
+			context.lineTo(cell[j][0], cell[j][1]);
+		}
+		context.closePath();
+		return true;
+	}		
+
+	var canvas = document.getElementById('canvas'); //Canvas to draw
+	window.addEventListener('resize', resizeCanvas, false);
+  function resizeCanvas() {
+	if (interval != null)
+	   interval.stop();
+	p=0;
+	canvas = d3.select('canvas').node();
+	context = canvas.getContext("2d");
+	canvas.width = window.innerWidth-4;
+	canvas.height = window.innerHeight-4;
+	width = canvas.width,
+	height = canvas.height;
+	sites = d3.range(width*height/2500).map(function (d) {
+			return [width * Math.random(), height * Math.random()];
+		});	
+	polygons = d3.voronoi().extent( [[-1,-1],[width+1,height+1]]).polygons(sites);	
 	redraw();
   }
   resizeCanvas();		

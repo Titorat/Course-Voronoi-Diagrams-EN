@@ -1584,6 +1584,7 @@ function VoronoiAnimateCallback() {
 		}
 	else {
 		Voronoi.dumpBeachline();
+		Voronoi.drawCells();		
 		}
 	}
 function VoronoiAnimate(px,ms) {

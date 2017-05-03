@@ -2,11 +2,14 @@
 This course is a simple approach to Voronoi Diagrams theory.
 ## Previous Knowledge:
 Basic programming knowledge: Variables, Arrays, Loops, Functions and Geometry.
-Javascript is used on the Course due to the visual nature of the exercises.
+
+Javascript is used on the Course due to the visual nature of the examples, but it's not a requeriment.
+The Course has simple programming exercises that can be solved with a minimal programming knowledge.
+
 ## Difficulty Level: 
 Intermediate.
 ## Estimated Time:
-15 minutes.
+10 minutes.
 ## What will I learn?
 Students will learn what a Voronoi Diagram is, and some use cases.
 ## Why should I learn?

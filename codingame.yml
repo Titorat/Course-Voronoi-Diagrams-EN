@@ -2,10 +2,10 @@ title : Voronoi Diagrams
 plan:
   - title: "What are Voronoi Diagrams?"
     statement: markdowns/intro.md
-  - title: "Voronoi Diagrams: Distance Functions"
-    statement: markdowns/distances.md
   - title: "Game AI's"
     statement: markdowns/game.md
+  - title: "Voronoi Diagrams: Distance Functions"
+    statement: markdowns/distances.md
   - title: "Fortune's Algorithm"
     statement: markdowns/fortune.md
   - title: "Final Words"
