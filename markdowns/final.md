@@ -5,14 +5,15 @@ In this course, we learned the basics of Voronoi Diagrams. The concept is simple
 **Pros**
 
 - Simple concept, easy to understand and to apply.
+- Easy to adapt to various problems with customized distance functions.
 
 **Cons**
 
-- Voronoi Diagrams can't deal with real-time distances. A planned emergency response diagram renders useless if traffic jams affect ambulances travel time.
+- Voronoi Diagrams can't deal with real-time distances. A planned emergency response diagram renders useless if traffic jams affect ambulances travel time, as you would have to take all these real-time factors into account from your distance function. This would multiply the overall complexity of the algorithm.
 - Resource intensive. Naive implementation is `O(n^2)` complex. Fortune's algorithm is `O(n log(n))` complex.
 
 ## Codingame Puzzles
-There are many Codingame puzzles where you can use Voronoi Diagrams:
+CodinGame.com, the online gaming platform for developers, has several puzzles where you can use Voronoi Diagrams:
 
 - [Tron Battle](https://www.codingame.com/multiplayer/bot-programming/tron-battle)
 - [Back to the Code](https://www.codingame.com/multiplayer/bot-programming/back-to-the-code)
