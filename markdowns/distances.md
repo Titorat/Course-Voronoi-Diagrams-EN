@@ -10,7 +10,7 @@ Distance functions are different ways to measure distance: straight line, time, 
 [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), also called *L² norm*, measures distance using a straight line in an Euclidean space. In a 2D space it is the same thing as the Pythagorean formula:
 
 ```math
-\sqrt{dx^2 + dy^2}
+d(a,b) = \sqrt{(x_b - x_a)^2 + (y_b - y_a)^2}
 ```
 
 The square root of the sum of the squared differences of movement on both axis. Here is an implementation of the Euclidean distance function used in a Voronoi Diagram. Try it out, and see that the border between two sites is exactly equidistant to the two points (it's at the middle of the straight line between the two points).
@@ -22,11 +22,17 @@ The square root of the sum of the squared differences of movement on both axis. 
 [Manhattan distance](https://en.wikipedia.org/wiki/Manhattan_distance), also called *L1 norm*, measures distance on a grid (no diagonal movement is allowed). In a 2D space:
 
 ```math
-|dx + dy|
+d(a,b) = |x_b - x_a| + |y_b - y_a|
 ```
 
 The absolute value of the sum of the differences of movement on both axis. Here is an implementation of the Manhattan distance function used in a Voronoi Diagram. Try it out, and see that the border between two sites is exactly equidistant (according to the Manhattant distance) to the two points.
 
 @[Try Manhattan Voronoi Out]({"stubs": ["ManhattanDistance.js"], "command": "echo 'CG> open --static-dir /project/target /ManhattanDistance.html'"})
 
-As you see, the Manhattan distance function returns a very different diagram. If you maximize the viewer, you'll notice the rendering of the Voronoi Diagram is quite slow. This is because the naive algorithm is slow. In the next lesson we will review another algorithm which is faster when number of sites are high.
+As you see, the Manhattan distance function returns a very different diagram.
+
+# Performance
+
+If you maximize the viewer, you'll notice the rendering of the Voronoi Diagram is quite slow. This is because the naive algorithm is slow. Since we check for each pixel what site it is in, for `p` pixels and `s` sites, the time complexity of the algorithm is `O(p * s)`.
+
+In the next lesson we will review another algorithm which is faster when number of sites are high.
