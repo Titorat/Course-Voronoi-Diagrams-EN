@@ -1,6 +1,6 @@
 # Final words
 
-In this Course we learned the basics of Voronoi Diagrams. The concept is simple yet powerful, and Voronoi Diagrams are widely used on many fields.
+In this course, we learned the basics of Voronoi Diagrams. The concept is simple yet powerful as Voronoi Diagrams are widely used in many fields.
 
 **Pros**
 
@@ -11,30 +11,30 @@ In this Course we learned the basics of Voronoi Diagrams. The concept is simple 
 - Voronoi Diagrams can't deal with real-time distances. A planned emergency response diagram renders useless if traffic jams affect ambulances travel time.
 - Resource intensive. Naive implementation is `O(n^2)` complex. Fortune's algorithm is `O(n log(n))` complex.
 
-## Codingame Puzzles 
+## Codingame Puzzles
 There are many Codingame puzzles where you can use Voronoi Diagrams:
 
-- https://www.codingame.com/multiplayer/bot-programming/tron-battle 
-- https://www.codingame.com/multiplayer/bot-programming/back-to-the-code
-- https://www.codingame.com/multiplayer/bot-programming/hypersonic
-- https://www.codingame.com/multiplayer/bot-programming/ghost-in-the-cell
-- https://www.codingame.com/multiplayer/bot-programming/game-of-drones
+- [Tron Battle](https://www.codingame.com/multiplayer/bot-programming/tron-battle)
+- [Back to the Code](https://www.codingame.com/multiplayer/bot-programming/back-to-the-code)
+- [Hypersonic](https://www.codingame.com/multiplayer/bot-programming/hypersonic)
+- [Ghost in the Cell](https://www.codingame.com/multiplayer/bot-programming/ghost-in-the-cell)
+- [Game of Drones](https://www.codingame.com/multiplayer/bot-programming/game-of-drones)
 
-As you see, a lot of game AI's make use of Voronoi diagrams. Maximizing controlled area or knowing what resources can be taken faster than the enemy is important in game AI.
+Many games’ AI make use of Voronoi Diagrams. Some game AI use cases include maximizing controlled area and knowing which resources can be taken faster than the enemy.
 
 ## Other interesting links
 
-http://www.raymondhill.net/voronoi/rhill-voronoi.html
+Raymond Hill's [Voronoi Implementation](http://www.raymondhill.net/voronoi/rhill-voronoi.html)
 
-https://visionscarto.net/the-state-of-d3-voronoi
+Philippe Rivière [The State of D3 Voronoi](https://visionscarto.net/the-state-of-d3-voronoi)
 
-https://github.com/d3/d3-voronoi
+[Official D3 Voronoi Implementation](https://github.com/d3/d3-voronoi)
 
-https://en.wikipedia.org/wiki/Voronoi_diagram
+Wikipedia: [Voronoi Diagram](https://en.wikipedia.org/wiki/Voronoi_diagram)
 
-https://en.wikipedia.org/wiki/Fortune%27s_algorithm
+Wikipedia: [Fortune's Algorithm](https://en.wikipedia.org/wiki/Fortune%27s_algorithm)
 
-https://en.wikipedia.org/wiki/Delaunay_triangulation With a hard relationship with Voronoi Diagrams.
+Wikipedia: [Delaunay Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) With a hard relationship with Voronoi Diagrams.
 
 
 

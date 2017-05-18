@@ -14,7 +14,7 @@ Students will learn what a Voronoi Diagram is, and some use cases.
 ## Why should I learn?
 Voronoi Diagrams can be used on:
 -  Spatial analysis & Resource organization: Mobile phone base stations, emergency modeling, geomarketing, etc.
--  Game AI: Maximize controlled area, find items where you always reach faster than the enemy, safest route,etc.
+-  Game AI: Maximize controlled area, find items where you always reach faster than the enemy, safest route, etc.
 -  [Many other applications](https://en.wikipedia.org/wiki/Voronoi_diagram#Applications)
 
 ## References and Credits

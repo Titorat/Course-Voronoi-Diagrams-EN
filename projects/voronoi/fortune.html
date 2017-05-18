@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Press "Run my Code" to see an animated fortune's algorithm.
 You don't need to learn the code below.
 
@@ -23,13 +23,13 @@ Steven Fortune's algorithm to generate Voronoi diagrams.
     body {font-family:tahoma,verdana,arial;font-size:13px;margin:0;padding:0}
     * {margin: 0;padding: 0;}
     body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
-    html,body {width: 100%;height: 100%;}	
+    html,body {width: 100%;height: 100%;}
     canvas { margin: 0px; border: solid black 2px;display: block; }
   </style>
 </head>
 <body>
 <div style="width:49%;margin:0;border:0;display:inline-block;vertical-align:top">
-<input id="voronoiAnimateSweepline" type="button" value="Animate sweep line" onclick="VoronoiAnimate(4,parseInt(document.getElementById('voronoiAnimateSweeplineDelay').value,10));document.getElementById('voronoiAnimateSweeplineDelay').value=VoronoiAnimateDelay;"/> every <input id="voronoiAnimateSweeplineDelay" type="text" value="15" size="2" maxlength="4"/> ms <input id="voronoiAnimateSweeplineStop" type="button" value="Stop" onclick="VoronoiAnimateStop();"/><br/></div>
+<input id="voronoiAnimateSweepline" type="button" value="Animate sweep line" onclick="VoronoiAnimate(4,parseInt(document.getElementById('voronoiAnimateSweeplineDelay').value,10));document.getElementById('voronoiAnimateSweeplineDelay').value=VoronoiAnimateDelay;"/> every <input id="voronoiAnimateSweeplineDelay" type="text" value="30" size="2" maxlength="4"/> ms <input id="voronoiAnimateSweeplineStop" type="button" value="Stop" onclick="VoronoiAnimateStop();"/><br/></div>
 <div id="canvasParent">
  <canvas id="voronoiCanvas" style="cursor:crosshair" width="800" height="600"></canvas>
 </div>
@@ -39,10 +39,10 @@ window.addEventListener('resize', resizeCanvas, false);
    Voronoi.setCanvasSize(window.innerWidth-4,window.innerHeight-40);
    Voronoi.clearSites();
    Voronoi.generateSites(window.innerWidth*window.innerHeight/2000);
-   VoronoiAnimate(4,15);
+   VoronoiAnimate(4,30);
   }
-  Voronoi.init();  
-  resizeCanvas();	
+  Voronoi.init();
+  resizeCanvas();
 </script>
 </body>
 </html>
