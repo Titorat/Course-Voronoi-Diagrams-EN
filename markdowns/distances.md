@@ -22,7 +22,7 @@ The square root of the sum of the squared differences of movement on both axis. 
 [Manhattan distance](https://en.wikipedia.org/wiki/Manhattan_distance), also called *L1 norm*, measures distance on a grid (no diagonal movement is allowed). In a 2D space:
 
 ```math
-\abs{dx + dy}
+|dx + dy|
 ```
 
 The absolute value of the sum of the differences of movement on both axis. Here is an implementation of the Manhattan distance function used in a Voronoi Diagram. Try it out, and see that the border between two sites is exactly equidistant (according to the Manhattant distance) to the two points.
