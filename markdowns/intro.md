@@ -11,7 +11,7 @@ Voronoi diagram is just the generalization of that idea for every point in a map
 >**Voronoi Diagram:** On a plane, for a set of sites (points in that 2D space with similar properties) the Voronoi diagram partitions the space based on the minimal distance to each site.
 
 In pseudo-code this is represented as:
-```csharp
+```javascript
  for each (point in plane){
    voronoi[point] = null; //Clear site owner of the point
    for each (site in list_sites){
