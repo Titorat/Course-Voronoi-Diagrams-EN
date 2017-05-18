@@ -2,9 +2,9 @@
 
 Voronoi Diagrams are heavily dependent of distance functions. Usually Euclidean distance is used on diagrams, but the Manhattan distance is preferred on grid-based maps. But what is a distance function?
 
-In the real world the distance from a point A to a point B is measured with the length of the imaginary straight line between these two points. That's the *Euclidean* distance. But you can actually measure distances in other ways. For instance, using time. If it takes you `1` hour by car to go from city A to city B, and it takes you `2` hours to go from city A to city C, you will consider city B to be closer, regardless of the geographical distance.
+In the real world the distance from a point A to a point B is measured with the length of the imaginary straight line between these two points. That's the *Euclidean* distance. But you can actually measure distances in other ways. For instance, using time. If it takes you `1` hour by car to go from city `A` to city `B`, and it takes you `2` hours to go from city `A` to city `C`, you will consider city `B` to be closer, regardless of the geographical distance.
 
-Distance functions are different ways to measure distance: straight line, time, car gas costs, there are many ways to measure distances. In this course we are focusing on two basic distance functions: Euclidean and Manhattan.
+Distance functions are different ways to measure distance: straight line, time, car gas costs, there are many ways to measure distances. In this course we are focusing on two basic distance functions: *Euclidean* and *Manhattan*.
 
 # Euclidean Distance
 [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), also called *L² norm*, measures distance using a straight line in an Euclidean space. In a 2D space it is the same thing as the Pythagorean formula:
