@@ -38,7 +38,7 @@ window.addEventListener('resize', resizeCanvas, false);
   function resizeCanvas() {
    Voronoi.setCanvasSize(window.innerWidth-4,window.innerHeight-40);
    Voronoi.clearSites();
-   Voronoi.generateSites(window.innerWidth*window.innerHeight/25000);
+   Voronoi.generateSites(window.innerWidth*window.innerHeight/15000);
    VoronoiAnimate(4,120);
   }
   Voronoi.init();
