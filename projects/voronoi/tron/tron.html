@@ -10,11 +10,17 @@
 
       #tron {
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 30px);
+      }
+      .hud{
+        height: 30px;
       }
     </style>
   </head>
   <body>
+    <div class="hud">
+      <button id="playBtn" onclick="pause()">Pause</button>
+    </div>
     <canvas id="tron"></canvas>
   </body>
 </html>

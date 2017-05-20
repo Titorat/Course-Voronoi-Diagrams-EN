@@ -1,10 +1,11 @@
 var canvas = document.getElementById('tron');
+var btn = document.getElementById('playBtn');
 var ctx = canvas.getContext("2d");
 var players;
-
+var hudSize = 30;
 var H = 15;
 
-var windowH = document.documentElement.clientHeight;
+var windowH = document.documentElement.clientHeight - hudSize;
 var windowW = document.documentElement.clientWidth;
 
 ctx.canvas.width  = windowW;
@@ -20,10 +21,19 @@ var map = [];
 
 var black = '#000000';
 
-var gameEnded = false;
+var isPaused = false;
 var interval;
 
 var colors = ["#F66", "#6F6", "#66F", "#F6F", "#FF6"]
+
+function pause() {
+  isPaused = !isPaused;
+  if(isPaused){
+    btn.innerHTML = 'Play';
+  } else {
+    btn.innerHTML = 'Pause';
+  }
+}
 
 function createPlayer(id, x, y) {
   return {
@@ -116,6 +126,9 @@ function main() {
   drawTiles(tiles, ctx);
 
   interval = setInterval(function(){
+    if(isPaused) {
+      return;
+    }
     try {
       animate();
     } catch(e) {
