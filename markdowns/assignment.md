@@ -1,6 +1,6 @@
 # Let's get our hands dirty
 
-Now that you know what a Voronoi Diagram is, let's see what you've got! We have a board where two players (snakes) can move in four directions (up, down, left, right). You have to define, for each tile of the grid, in what Voronoi site it is, relative to the players' heads. The players move around the map randomly.
+Now that you know what a Voronoi Diagram is, let's see what you've got! We have a board where multiple firetrucks can move in four directions (up, down, left, right). You have to define, for each tile of the grid, in what Voronoi site it is, relative to the trucks' positions. The trucks move around the map randomly.
 
 We call your function at every game turn and draw the map accordingly. **You don't have to code the game, just fill the Voronoi diagram!**
 

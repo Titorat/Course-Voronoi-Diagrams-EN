@@ -2,7 +2,7 @@ var canvas = document.getElementById('tron');
 var ctx = canvas.getContext("2d");
 var players;
 
-var H = 12;
+var H = 15;
 
 var windowH = document.documentElement.clientHeight;
 var windowW = document.documentElement.clientWidth;
@@ -23,12 +23,14 @@ var black = '#000000';
 var gameEnded = false;
 var interval;
 
+var colors = ["#F66", "#6F6", "#66F", "#F6F", "#FF6"]
+
 function createPlayer(id, x, y) {
   return {
     id,
     x,
     y,
-    color: id ? "#F66" : "#66F"
+    color: colors[id]
   }
 }
 
@@ -69,12 +71,9 @@ function getNeigh(tile) {
   return neigh.filter(t => !t.player);
 }
 
-function simulate(player, tile) {
-  var score =  0;
-}
-
 function move(player) {
   var tile = map[player.y][player.x];
+  tile.player = null;
   var neighbours = getNeigh(tile);
 
   var newTile = neighbours[Math.floor(neighbours.length * Math.random())];
@@ -111,11 +110,9 @@ function main() {
   }
   ctx.stroke();
 
-  players = [createPlayer(0,0,0), createPlayer(1, W-1, H-1)];
+  players = [createPlayer(0,1,1), createPlayer(1, W-2, H-2), createPlayer(2, 1, H-2), createPlayer(3, W-2, 1), createPlayer(4, Math.floor(W/2), Math.floor(H/2))];
   console.log(players);
   console.log(tiles);
-  tiles[0].player = players[0];
-  tiles[tiles.length - 1].player = players[1];
   drawTiles(tiles, ctx);
 
   interval = setInterval(function(){
@@ -124,7 +121,7 @@ function main() {
     } catch(e) {
       clearInterval(interval);
     }
-  }, 500);
+  }, 400);
 }
 
 main();
