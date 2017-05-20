@@ -2,8 +2,8 @@ var canvas = document.getElementById('tron');
 var ctx = canvas.getContext("2d");
 var players;
 
-var H = 8;
-var W = 16;
+var H = 10;
+var W = 10;
 var wPx = 512;
 
 var cellSize = wPx / W;
