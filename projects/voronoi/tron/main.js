@@ -2,7 +2,7 @@ var canvas = document.getElementById('tron');
 var ctx = canvas.getContext("2d");
 var players;
 
-var H = 10;
+var H = 15;
 var W = 10;
 var wPx = 512;
 

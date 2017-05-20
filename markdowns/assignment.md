@@ -17,4 +17,4 @@ As a reminder, here is the pseudo-code for the naive Voronoi algorithm:
  }
 ```
 
-@[Did you solve it?]({"stubs": ["tron/voronoi.js"], "layou": "aside": "command": "echo 'CG> open --static-dir /project/target/tron /tron.html'"})
+@[Did you solve it?]({"stubs": ["tron/voronoi.js"], "layout": "aside", "command": "echo 'CG> open --static-dir /project/target/tron /tron.html'"})
