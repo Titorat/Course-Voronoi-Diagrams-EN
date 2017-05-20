@@ -11,8 +11,9 @@ As a reminder, here is the pseudo-code for the naive Voronoi algorithm:
    tile.site = null; // Clear site owner of the point
    for each (site in sites){
      double tempdist = distance(tile,site);
-   if (tile.site == null || tempdist < distance(tile, tile.site) )
+     if (tile.site == null || tempdist < distance(tile, tile.site)) {
       tile.site = site; // Update site owner if it's nearest.
+     }
    }
  }
 ```
