@@ -35,4 +35,4 @@ As you see, the Manhattan distance function returns a very different diagram.
 
 If you maximize the viewer, you'll notice the rendering of the Voronoi Diagram is quite slow. This is because the naive algorithm is slow. Since we check for each pixel what site it is in, for `p` pixels and `s` sites, the time complexity of the algorithm is `O(p * s)`.
 
-In the next lesson we will review another algorithm which is faster when number of sites are high.
+In the following lessons we will review another algorithm which is faster when number of sites are high.
