@@ -69,11 +69,15 @@ function getNeigh(tile) {
   return neigh.filter(t => !t.player);
 }
 
+function simulate(player, tile) {
+  var score =  0;
+}
+
 function move(player) {
   var tile = map[player.y][player.x];
   var neighbours = getNeigh(tile);
 
-  var newTile = neighbours[Math.floor(neighbours.length * Math.random())]
+  var newTile = neighbours[Math.floor(neighbours.length * Math.random())];
   player.x = newTile.x;
   player.y = newTile.y;
 }
