@@ -2,11 +2,18 @@ var canvas = document.getElementById('tron');
 var ctx = canvas.getContext("2d");
 var players;
 
-var H = 15;
-var W = 10;
-var wPx = 512;
+var H = 12;
 
-var cellSize = wPx / W;
+var windowH = document.documentElement.clientHeight;
+var windowW = document.documentElement.clientWidth;
+
+ctx.canvas.width  = windowW;
+ctx.canvas.height = windowH;
+
+var cellSize = Math.floor(windowH / H);
+var W = Math.floor(windowW / cellSize);
+
+console.log(H, W, cellSize);
 
 var tiles = [];
 var map = [];
