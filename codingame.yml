@@ -4,6 +4,8 @@ plan:
     statement: markdowns/intro.md
   - title: "Voronoi Diagrams: Distance Functions"
     statement: markdowns/distances.md
+  - title: "Let's get your hands dirty!"
+    statement: markdowns/assignment.md
   - title: "Fortune's Algorithm"
     statement: markdowns/fortune.md
   - title: "Final Words"
