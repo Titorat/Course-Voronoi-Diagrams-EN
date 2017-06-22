@@ -4,7 +4,7 @@ A Voronoi diagram is a simple concept, and it's based on the minimal distance ne
 If you need to go to a metro station, the most natural algorithm is going to the nearest one. Simple, isn't it?
 
 *Imagine a city, where a fire is declared. Emergency services need to send a fire truck to this place. If there are N fire stations, what fire truck should be sent?*
-![Voronoi Trucks](trucks.gif "Voronoi Trucks")
+![Voronoi Trucks](/images/trucks.gif "Voronoi Trucks")
 The nearest fire truck is in the light green Voronoi Area, the same area as the fire. No other truck can reach any light green point faster than this truck.
 
 Voronoi diagram is just the generalization of that idea for every point in a map:
@@ -34,7 +34,7 @@ In game theory, Voronoi Diagrams are widely used. When N players compete for the
 
 On this image:
 
-![Voronoi Game](voronoi.jpg "Voronoi Game")
+![Voronoi Game](/images/voronoi.jpg "Voronoi Game")
 
 Players `B` and `C` can be tempted to capture the health pack `4`, but according to the Voronoi Diagram Player `D` will reach it faster. If the three players target the same health pack, it’s almost certain that player `D` will take it.
 In that case, the game’s AI must decide if it takes the risk to target an item outside it’s Voronoi Area or to play it safe and target one inside the area.

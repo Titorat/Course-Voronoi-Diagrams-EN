@@ -37,5 +37,15 @@ Wikipedia: [Fortune's Algorithm](https://en.wikipedia.org/wiki/Fortune%27s_algor
 
 Wikipedia: [Delaunay Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) With a hard relationship with Voronoi Diagrams.
 
+## References and Credits
+This course make use of external resources:
+-  Data-Driven Document Library, [D3js](https://d3js.org/)
+-  Philippe Rivière [The State of D3 Voronoi](https://visionscarto.net/the-state-of-d3-voronoi)
+-  Raymond Hill's [implementation of the fortune algorithm](https://github.com/gorhill/Javascript-Voronoi)
 
+(BSD License Copyright (c) 2015 Mike Bostock)
+
+(MIT License Copyright (c) Philippe Rivière)
+
+(MIT License Copyright (c) 2010-2013 Raymond Hill)
 
