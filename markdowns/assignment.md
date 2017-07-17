@@ -26,7 +26,7 @@ As a reminder, here is the pseudo-code for the naive Voronoi algorithm:
 ::: Got Stuck? Click here to view a solution for this exercise
 
 ```javascript
-// Color each point
+// Create the Voronoi areas
 function fillVoronoi (tiles, players) {
   for(var t in tiles) {
     var tile = tiles[t];
@@ -44,8 +44,8 @@ function fillVoronoi (tiles, players) {
 
 function distance(pointA, pointB) {
   //We return the Manhattan distance, that is coded as:
-  var dx = pointA.x -pointB.x;
-  var dy = pointA.y -pointB.y;
+  var dx = pointA.x - pointB.x;
+  var dy = pointA.y - pointB.y;
   return Math.abs(dx) + Math.abs(dy); // Manhattan distance formula  
 }
 
