@@ -92,14 +92,13 @@ function move(player) {
 }
 
 function animate() {
-  fillVoronoi (tiles, players);
   for(var p in players) {
     var player = players[p];
     move(player);
     var tile = map[player.y][player.x];
     tile.player = player;
   }
-
+  fillVoronoi (tiles, players);
   drawTiles(tiles, ctx);
 }
 
