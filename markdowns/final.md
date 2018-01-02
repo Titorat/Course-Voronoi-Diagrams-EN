@@ -38,6 +38,7 @@ Wikipedia: [Fortune's Algorithm](https://en.wikipedia.org/wiki/Fortune%27s_algor
 Wikipedia: [Delaunay Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) With a hard relationship with Voronoi Diagrams.
 
 ## References and Credits
+
 This course make use of external resources:
 -  Data-Driven Document Library, [D3js](https://d3js.org/)
 -  Philippe Rivière [The State of D3 Voronoi](https://visionscarto.net/the-state-of-d3-voronoi)
